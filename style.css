@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Stockholm';
+    src: url('/fonts/Stockholm/Stockholm.ttf');
+}
+
+
+body {
+
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__imagen {
+    height: 0.6rem;
+    margin: 4rem;
+}
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 2rem;
+}
+
+
+.header__lista {
+    display: flex;
+    /* Esto es para que se pongan horizontales uno al lado del otro*/
+    list-style-type: none;
+    /*Esto es para que los puntos  de la lista "desaparezcan" */
+}
+
+.header__linkLista {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+    justify-content: center;
+    display: flex;
+}
+
+.header__elementoLista {
+    padding: 0 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.header__elementoLista header__elementoLista--desaparece {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .header__elementoLista {
+        display: none;
+    }
+
+}
+
+.texto__frase {
+    font-weight: 100;
+    margin-left: 4rem;
+}
+
+.figuras_extranas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+
+/* @media screen and (max-width:768px) {
+        .figuras_extrañas  {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0.5rem;
+        margin: 0.5rem;
+
+    }
+
+} */
+
+.figuras_extranas img {
+height: auto;
+width: 20rem;
+margin-top: 2rem;
+/* margin-bottom: 2rem; */
+}
+
+/* 
+@media screen and (max-width:768px) {
+    .figuras_extrañas img {
+        height: auto;
+        width: 15rem;
+        margin-top: 2rem;
+    } */
+
+
+.figura_extrana1 {
+    margin-left: 3rem;
+    /* Doble del margen izquierdo normal */
+}
+
+.figura_extrana4{
+    margin-right: 3rem;
+}
+
+.figura_extrana5 {
+    margin-left: 3rem;
+}
+
+.figura_extrana9{
+    margin-right: 3rem;
+}
+
+.figura_extrana10 {
+    margin-left: 3rem;
+}
+
+.figura_extrana14{
+    margin-right: 3rem;
+}
+
+.seccionFinal__contenedor{
+    display: flex; /* convierte el contenedor en un contenedor flexible.*/
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    font-size: 0.8rem;
+    }
+
+.seccionFinal__imagen{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 3rem;   /* Esto es para darle margen por arriba */
+    }
+
+.linea{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.seccionFooter__frase{
+    margin-left: 3rem;
+    font-size: 0.6rem;
+}
+
+.footer__lista{
+position: absolute;
+right: 0;
+display: flex;
+margin-right: 2rem;
+/* align-items: end; */
+/*margin-right: 3rem; */
+}
+
+.footer__linkLista{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: black;
+    /* margin-right: 4rem; */
+}
+
+.footer__elementoLista{
+padding: 0 1rem;
+justify-content:center;
+display: flex;
+}
+
+.SeccionFooter--ContenedorTexto{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
